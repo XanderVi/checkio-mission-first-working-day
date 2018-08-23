@@ -1,16 +1,19 @@
 "use strict";
 
-function stick(data) {
+function vacation(date, days) {
     // your code here
     return 0;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
+    console.log("Example:");
+    console.log(vacation('2018-07-01', 14));
+
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.deepEqual(stick(64), [15, 21, 28])
-    assert.deepEqual(stick(371), [36, 45, 55, 66, 78, 91])
-    assert.deepEqual(stick(225), [105, 120])
-    assert.deepEqual(stick(882), [])
+    assert.equal(vacation('2018-07-01', 14), '2018-07-16')
+    assert.equal(vacation('2018-02-19', 10), '2018-03-01')
+    assert.equal(vacation('2000-02-28', 5), '2000-03-06')
+    assert.equal(vacation('1999-12-20', 14), '2000-01-03')
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
